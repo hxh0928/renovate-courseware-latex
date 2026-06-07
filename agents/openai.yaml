@@ -1,0 +1,4 @@
+interface:
+  display_name: "翻新课件为 LaTeX"
+  short_description: "将旧课件翻新为 ctexbeamer LaTeX 新课件。"
+  default_prompt: "请把我上传的旧课件翻新为指定模板的 LaTeX beamer 新课件，并保留知识结构、公式和图表信息。"

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="260" viewBox="0 0 780 260" role="img" aria-label="Release downloads over time">
+  <style>
+    .bg { fill: #ffffff; }
+    .title { fill: #503025; font: 700 18px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif; }
+    .axis { fill: #5f5f5f; font: 12px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif; }
+    .grid { stroke: #e0e8ec; stroke-width: 1; }
+    .line { fill: none; stroke: #2a7e91; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+    .area { fill: #e8f1f5; opacity: 0.9; }
+    .dot { fill: #d05c2a; stroke: #ffffff; stroke-width: 2; }
+  </style>
+  <rect class="bg" width="780" height="260" rx="8"/>
+  <text x="54" y="22" class="title">Release Download Trend</text>
+  <line x1="54" y1="28.0" x2="756" y2="28.0" class="grid"/><text x="44" y="32.0" text-anchor="end" class="axis">1</text><line x1="54" y1="74.5" x2="756" y2="74.5" class="grid"/><text x="44" y="78.5" text-anchor="end" class="axis">1</text><line x1="54" y1="121.0" x2="756" y2="121.0" class="grid"/><text x="44" y="125.0" text-anchor="end" class="axis">0</text><line x1="54" y1="167.5" x2="756" y2="167.5" class="grid"/><text x="44" y="171.5" text-anchor="end" class="axis">0</text><line x1="54" y1="214.0" x2="756" y2="214.0" class="grid"/><text x="44" y="218.0" text-anchor="end" class="axis">0</text>
+  <line x1="54" y1="214" x2="756" y2="214" class="grid"/>
+  <polygon points="54,214 54.0,214.0 756,214" class="area"/>
+  <polyline points="54.0,214.0" class="line"/>
+  <circle cx="54.0" cy="214.0" r="5" class="dot"/>
+  <text x="54" y="244" class="axis">2026-06-07</text>
+  <text x="756" y="244" text-anchor="end" class="axis">2026-06-07</text>
+  <text x="46.0" y="202.0" text-anchor="end" class="axis">total 0</text>
+</svg>

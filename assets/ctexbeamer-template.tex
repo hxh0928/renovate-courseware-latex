@@ -1,0 +1,89 @@
+\documentclass[aspectratio=169,11pt]{ctexbeamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,array,tabularx,multirow,colortbl}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathreplacing}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\definecolor{MainBlue}{RGB}{42,126,145}
+\definecolor{DeepBrown}{RGB}{80,45,35}
+\definecolor{LightTeal}{RGB}{232,241,245}
+\definecolor{WarnRed}{RGB}{184,0,0}
+\definecolor{GoodGreen}{RGB}{22,132,92}
+\definecolor{GrayText}{RGB}{95,95,95}
+\definecolor{AccentOrange}{RGB}{208,92,42}
+\definecolor{DarkTeal}{RGB}{0,88,118}
+\definecolor{SoftLine}{RGB}{224,232,236}
+
+\lstdefinestyle{rcode}{
+  basicstyle=\ttfamily\scriptsize,
+  keywordstyle=\color{MainBlue}\bfseries,
+  commentstyle=\color{GrayText},
+  stringstyle=\color{AccentOrange},
+  showstringspaces=false,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{SoftLine},
+  columns=fullflexible
+}
+
+\setbeamersize{text margin left=0.65cm,text margin right=0.65cm}
+\linespread{1.05}
+\setlength{\parskip}{2pt}
+\renewcommand{\arraystretch}{1.18}
+
+\setbeamercolor{frametitle}{fg=DeepBrown}
+\setbeamercolor{title}{fg=white,bg=DarkTeal}
+\setbeamercolor{structure}{fg=MainBlue}
+\setbeamercolor{section in toc}{fg=DeepBrown}
+\setbeamercolor{subsection in toc}{fg=DeepBrown}
+\setbeamertemplate{section in toc}{\leavevmode\textcolor{DeepBrown}{$\bullet$}\hspace{0.6em}\inserttocsection\par}
+
+\newcommand{\key}[1]{\textcolor{MainBlue}{\bfseries #1}}
+\newcommand{\warn}[1]{\textcolor{WarnRed}{\bfseries #1}}
+\newcommand{\good}[1]{\textcolor{GoodGreen}{\bfseries #1}}
+\newcommand{\smallnote}[1]{{\scriptsize\color{GrayText}#1}}
+\newcommand{\sep}{\vspace{2pt}{\color{SoftLine}\hrule}\vspace{5pt}}
+\newcommand{\Hnull}{H_0}
+\newcommand{\Halt}{H_1}
+\newcommand{\Reject}{\textcolor{WarnRed}{拒绝 $H_0$}}
+\newcommand{\NotReject}{\textcolor{GoodGreen}{不拒绝 $H_0$}}
+\newcolumntype{Y}{>{\vspace{0.35ex}\raggedright\arraybackslash}X}
+
+\AtBeginSection[]{
+  \begin{frame}[plain]
+    \centering\vfill
+    {\Huge\bfseries\color{DarkTeal}\insertsection}
+    \vfill
+  \end{frame}
+}
+
+% Metadata placeholders. Replace during renovation.
+\title{课程标题}
+\subtitle{章节标题}
+\author{授课教师}
+\institute{单位}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{目录}
+  \tableofcontents
+\end{frame}
+
+% Start renovated content here.
+
+\end{document}

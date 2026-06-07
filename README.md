@@ -27,14 +27,6 @@ Example prompt:
 
 If course name or instructor is not provided, the skill will infer them from the source or conversation when possible and remind you that they can be overridden.
 
-## Download Trend
-
-![GitHub all releases downloads](https://img.shields.io/github/downloads/hxh0928/renovate-courseware-latex/total?label=release%20downloads)
-
-![Install and download trend](assets/downloads-line.svg)
-
-The line chart is generated from GitHub Release asset download counts. Git clone/install counts are not publicly exposed by GitHub, so release downloads are used as the durable public metric.
-
 ## What It Does
 
 - Extracts source courseware structure, text, formulas, tables, diagrams, examples, and code.
@@ -68,3 +60,11 @@ The line chart is generated from GitHub Release asset download counts. Git clone
 The bundled template uses `ctexbeamer`, `Madrid`, `booktabs`, `tabularx`, `tikz`, `pgfplots`, and `listings`. On older TeX Live installations, the skill may lower `pgfplots` compatibility to the highest supported version while keeping the deck style intact.
 
 To automate the download chart, add a scheduled GitHub Actions workflow that runs `python scripts/update_download_metrics.py` and commits changes to `metrics/download-history.json` and `assets/downloads-line.svg`. Pushing workflow files requires a GitHub token with the `workflow` scope.
+
+## Download Trend
+
+![GitHub all releases downloads](https://img.shields.io/github/downloads/hxh0928/renovate-courseware-latex/total?label=release%20downloads)
+
+![Install and download trend](assets/downloads-line.svg)
+
+The line chart is generated from GitHub Release asset download counts. Git clone/install counts are not publicly exposed by GitHub, so release downloads are used as the durable public metric.

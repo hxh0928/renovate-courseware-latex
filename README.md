@@ -6,7 +6,13 @@ This Codex skill is designed for Chinese and English courseware renovation. It p
 
 ## Install
 
-Clone this repository into your Codex skills directory:
+Ask Codex to install it with this prompt:
+
+```text
+请帮我安装codex skill [hxh0928/renovate-courseware-latex](https://github.com/hxh0928/renovate-courseware-latex)
+```
+
+Or clone this repository into your Codex skills directory:
 
 ```bash
 mkdir -p ~/.codex/skills
